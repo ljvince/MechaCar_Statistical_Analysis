@@ -15,9 +15,15 @@
 ## results 
 #### Linear Regression to Predict MPG
 <img width="1154" alt="Screen Shot 2022-09-05 at 1 07 35 AM" src="https://user-images.githubusercontent.com/106010498/188513285-aaec1997-4365-45e0-a54a-b27ea68efb87.png">
-###### The most significant variables in this project is showing a non-random effect on the MPG of the Mechacar are the vehicle length and the ground clearance. so as the read line showing in the image above, a linear regression model run on these variables against figures for MPG, resulted in p-values of 2.6*10^(-12) and 5.21*10^(-8).The intercept is statistically significant as well, indicating that there is other factors, not included in dataset and have a strong impact on the mpg.
+
+######  The most significant variables in this project is showing a non-random effect on the MPG of the Mechacar are the vehicle length and the ground clearance. so as the read line showing in the image above, a linear regression model run on these variables against figures for MPG, resulted in p-values of 2.6*10^(-12) and 5.21*10^(-8).The intercept is statistically significant as well, indicating that there is other factors, not included in dataset and have a strong impact on the mpg.
+
+
 ###### As the p-value of 5.35*10^(-11) that showing in the image above as the blue line, which is lower than an extreme level. of significance, and also the null hypothesis must be rejected. this means that the relationship between the variables and the miles per gallon is subject to more than random chance.
-##### The r-squared value of 0.7149, higglighter in the yellow line, indicateds that the model is 71% accurate even though there is still an unconsidered factores, the model does predict the mpg of the Mechacar prototype with some effectiveness. 
+
+###### The most significant variables in this project is showing a non-random effect on the MPG of the Mechacar are the vehicle length and the ground clearance. so as the read line showing in the image above, a linear regression model run on these variables against figures for MPG, resulted in p-values of 2.6*10^(-12) and 5.21*10^(-8).The intercept is statistically significant as well, indicating that there is other factors, not included in dataset and have a strong impact on the mpg.
+
+###### The r-squared value of 0.7149, higglighter in the yellow line, indicateds that the model is 71% accurate even though there is still an unconsidered factores, the model does predict the mpg of the Mechacar prototype with some effectiveness. 
 
 #### Summary Statistics on Suspension Coils
 
@@ -27,47 +33,50 @@
 
 <img width="857" alt="Screen Shot 2022-09-05 at 1 32 51 AM" src="https://user-images.githubusercontent.com/106010498/188517975-7b3b31bc-25c7-45df-8ad1-11d528f7c5fa.png">
 
-###### overall the variance, the Total Summary data above is under 100 PSI and meets specifications, there is a problem with the one of the individual lots
-###### in the Lot Summary stats, variance for lot 3 is way more over the acceptable threshold, at 179.28
+##### overall the variance, the Total Summary data above is under 100 PSI and meets specifications, there is a problem with the one of the individual lots
+##### in the Lot Summary stats, variance for lot 3 is way more over the acceptable threshold, at 179.28
 
 
 #### T-Tests on Suspension Coils
 
-###### Suspension Coils Cumulative T-test 
+#### Suspension Coils Cumulative T-test 
 
 <img width="699" alt="Screen Shot 2022-09-05 at 1 52 43 PM" src="https://user-images.githubusercontent.com/106010498/188518326-1ec5172e-5fee-42aa-aa67-0c7a35ece152.png">
+
+
 ###### the review of results of the T-test for the suspension coils across all manufacturing lots shows that here are not statistically different from the population mean, and the p-value is not low enough(0.0603) for us to reject the null hypothesis.
  
  <img width="1071" alt="Screen Shot 2022-09-05 at 1 53 04 PM" src="https://user-images.githubusercontent.com/106010498/188518344-becd0986-9d10-4670-a5f1-c8a1b1e7e48a.png">
+
 ###### the review of results of the T-test for the suspension coils for lot 1 shows that here are not statistically different from the population mean, and the p-value is not low enough(1) for us to reject the null hypothesis.
 
 <img width="1060" alt="Screen Shot 2022-09-05 at 1 53 10 PM" src="https://user-images.githubusercontent.com/106010498/188518352-d0f1ba30-325d-4754-9a40-61ba1bb295cb.png">
+
 ###### the review of results of the T-test for the suspension coils for lot 2 shows that here are not statistically different from the population mean, and the p-value is not low enough(0.6072) for us to reject the null hypothesis.
 
 <img width="1060" alt="Screen Shot 2022-09-05 at 1 53 17 PM" src="https://user-images.githubusercontent.com/106010498/188518360-9d56d9a2-5bf5-45ac-bdd0-aaf5c5208bf1.png">
+
 ###### the review of results of the T-test for the suspension coils for lot 2 shows that here are slightly statistically different from the population mean, and the p-value is a little bit low enough(0.0417) for us to reject the null hypothesis.
 
 
 
 
 
+## Overview
+## Study Design: MechaCar vs Competition
+#### In these days ridersharing is becoming more commen and it's easy and cheap to get around in others vehicles, customers looking to purchase a car are looking for more than just a trasportation. they are likily be looking to buy a new car that is an economical which means to regularly transport themselves and their items on a reliable, safity basis.
 
-Study Design: MechaCar vs Competition
+#### metric to test
+###### To getting down our test, ecaluate Mechacar's carrying capacity should be go in cubic inches, in order to comparison to various competitors
 
-There are many factors that consumers take into consideration when evaluating a car to purchase. However, in a world where ridesharing is becoming more ubiquitous and it's easy and cheap to get around in other people's vehicles, customers looking to purchase a car are looking for more than just a conveyance. They will be looking to buy a car that is an economical means to regularly transport themselves and their items on a reliable, regular basis.
+#### Null and Alternate Hypothesis
 
-Metric to test
+        1. MechaCar prototypes' average carrying capacity is similar to competitor's vehicles in the same vehicle class 
+        2. MechaCar prototypes' average carrying capacity is statistically above or below that of competitor vehicles.
 
-To narrow down our test, we should evaluate MechaCar's carrying capacity, in cubic inches, in comparison to various competitors' vehicles.
+#### to add up test statistically 
+###### add more than two-sample t-tests will be better for statistically test in this case
 
-Null and Alternate Hypothesis
+#### more data
+###### cubic space data might needed to carrying compartment of all mechacar prototypes, and also from all major competitor vehicles.
 
-H0: MechaCar prototypes' average carrying capacity is similar to competitor's vehicles in the same vehicle class Ha: MechaCar prototypes' average carrying capacity is statistically above or below that of competitor vehicles.
-
-Statistical Test Used
-
-The best statistical test for this would be two-sample t-tests.
-
-What data is needed
-
-We would need to gather cubic space data from the carrying compartments of all MechaCar prototypes, as well as from all major competitor vehicles.
